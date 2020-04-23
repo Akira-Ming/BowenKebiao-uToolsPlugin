@@ -1,0 +1,17 @@
+{
+	"pluginName": "AkiraMing课表查询",
+	"description": "我的第一个uTools插件,现在方便了不用每次看课表都要打开官网了，哈哈",
+	"author": "AkiraMing",
+    "homepage": "https://u.tools",
+	"main": "index.html",
+	"preload":"preload.js",
+	"version": "0.0.9",
+	"logo": "logo.png",
+	"features": [
+	    {
+			"code": "AkiraMing",
+			"explain": "课表查询",
+	        "cmds":["AkiraMing", "课表查询"]
+	    }
+	]
+}

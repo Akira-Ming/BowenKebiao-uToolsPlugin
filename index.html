@@ -1,0 +1,146 @@
+<head id="headerid1">
+
+	<title>学期理论课表</title>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.js"></script>
+	<!-- <link href="http://54.222.196.251:81/gllgdxbwglxy_jsxsd/framework/images/common.css" rel="stylesheet"
+		type="text/css">
+	<link href="http://54.222.196.251:81/gllgdxbwglxy_jsxsd/framework/images/blue.css" rel="stylesheet" type="text/css"
+		id="link_theme"> -->
+	<!-- <link href="http://54.222.196.251:81/gllgdxbwglxy_jsxsd/framework/images/workstation.css" rel="stylesheet"
+        type="text/css"> -->
+</head>
+
+
+<body>
+	<div>
+
+		周次：<select name="zc" id="zc" onchange="javascript:getZc();">
+			<option value="">(全部)</option>
+
+			<option value="1">第1周</option>
+
+			<option value="2">第2周</option>
+
+			<option value="3">第3周</option>
+
+			<option value="4">第4周</option>
+
+			<option value="5">第5周</option>
+
+			<option value="6">第6周</option>
+
+			<option value="7">第7周</option>
+
+			<option value="8">第8周</option>
+
+			<option value="9">第9周</option>
+
+			<option value="10">第10周</option>
+
+			<option value="11">第11周</option>
+
+			<option value="12">第12周</option>
+
+			<option value="13">第13周</option>
+
+			<option value="14">第14周</option>
+
+			<option value="15">第15周</option>
+
+			<option value="16">第16周</option>
+
+			<option value="17">第17周</option>
+
+			<option value="18">第18周</option>
+
+			<option value="19">第19周</option>
+
+			<option value="20">第20周</option>
+
+			<option value="21">第21周</option>
+
+			<option value="22">第22周</option>
+
+			<option value="23">第23周</option>
+
+			<option value="24">第24周</option>
+
+			<option value="25">第25周</option>
+
+			<option value="26">第26周</option>
+
+			<option value="27">第27周</option>
+
+			<option value="28">第28周</option>
+
+			<option value="29">第29周</option>
+
+			<option value="30">第30周</option>
+
+			<input type="hidden" name="demo" id="demo" value="">
+		</select>学年学期：<select name="xnxq01id" id="xnxq01id" onchange="javascript:getZc();" 　style="width:180px;">
+
+			<option value="2019-2020-2" selected="selected">2019-2020-2</option>
+
+			<option value="2019-2020-1">2019-2020-1</option>
+
+			<option value="2018-2019-2">2018-2019-2</option>
+
+			<option value="2018-2019-1">2018-2019-1</option>
+
+			<option value="2017-2018-2">2017-2018-2</option>
+
+			<option value="2017-2018-1">2017-2018-1</option>
+
+			<option value="2016-2017-2">2016-2017-2</option>
+
+			<option value="2016-2017-1">2016-2017-1</option>
+
+			<option value="2015-2016-2">2015-2016-2</option>
+
+			<option value="2015-2016-1">2015-2016-1</option>
+
+			<option value="2014-2015-2">2014-2015-2</option>
+
+			<option value="2014-2015-1">2014-2015-1</option>
+
+			<option value="2013-2014-2">2013-2014-2</option>
+
+			<option value="2013-2014-1">2013-2014-1</option>
+
+		</select>
+		&nbsp;<input type="checkbox" name="sfFD" id="sfFD" value="1" onclick="funFD(this.checked)" checke>放大
+	</div>
+
+	<div id="test">
+
+	</div>
+
+	<script>
+
+		//放大显示详细
+		function funFD(flag) {
+			if (flag) {
+				var jx0415zbdiv_1 = document.getElementsByName("jx0415zbdiv_1");
+				for (var i = 0; i < jx0415zbdiv_1.length; i++) {
+					document.getElementById(jx0415zbdiv_1[i].value).style.display = "none";
+				}
+				var jx0415zbdiv_2 = document.getElementsByName("jx0415zbdiv_2");
+				for (var i = 0; i < jx0415zbdiv_2.length; i++) {
+					document.getElementById(jx0415zbdiv_2[i].value).style.display = "";
+				}
+			} else {
+				var jx0415zbdiv_1 = document.getElementsByName("jx0415zbdiv_1");
+				for (var i = 0; i < jx0415zbdiv_1.length; i++) {
+					document.getElementById(jx0415zbdiv_1[i].value).style.display = "";
+				}
+				var jx0415zbdiv_2 = document.getElementsByName("jx0415zbdiv_2");
+				for (var i = 0; i < jx0415zbdiv_2.length; i++) {
+					document.getElementById(jx0415zbdiv_2[i].value).style.display = "none";
+				}
+			}
+		} 
+	</script>
+
+	<script src="./testHtml.js"></script>
+</body>
